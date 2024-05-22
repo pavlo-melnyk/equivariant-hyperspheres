@@ -1,0 +1,3 @@
+dataset:
+  module: data.skeletons.UTKinectSkeletonsDataset
+  dset_root: datasets

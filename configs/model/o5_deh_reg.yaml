@@ -1,0 +1,20 @@
+model:
+  module: models.deepspheres.DEH_o5reg
+  depth: 1
+  width: [2]
+  output_channels: 1
+  permutation_invariant: False
+  space_dim: 5
+  num_points: 2           
+  sphere_bias: False
+  normalized_spheres: False
+  norm_activations_grad: True
+
+
+# python o5_regression.py -C configs/engineer/trainer.yaml -C configs/optimizer/adam.yaml -C configs/dataset/o5_regression.yaml -C configs/model/o5_deh_reg.yaml --trainer.max_steps=131072 --trainer.val_check_interval=1024 --dataset.batch_size=32 --dataset.num_samples=30000 --optimizer.lr=0.001
+# python o5_regression.py -C configs/engineer/trainer.yaml -C configs/optimizer/adam.yaml -C configs/dataset/o5_regression.yaml -C configs/model/o5_deh_reg.yaml --trainer.max_steps=131072 --trainer.val_check_interval=1024 --dataset.batch_size=32 --dataset.num_samples=10000 --optimizer.lr=0.001
+# python o5_regression.py -C configs/engineer/trainer.yaml -C configs/optimizer/adam.yaml -C configs/dataset/o5_regression.yaml -C configs/model/o5_deh_reg.yaml --trainer.max_steps=131072 --trainer.val_check_interval=1024 --dataset.batch_size=32 --dataset.num_samples=3000 --optimizer.lr=0.001
+# python o5_regression.py -C configs/engineer/trainer.yaml -C configs/optimizer/adam.yaml -C configs/dataset/o5_regression.yaml -C configs/model/o5_deh_reg.yaml --trainer.max_steps=131072 --trainer.val_check_interval=1024 --dataset.batch_size=32 --dataset.num_samples=1000 --optimizer.lr=0.001
+# python o5_regression.py -C configs/engineer/trainer.yaml -C configs/optimizer/adam.yaml -C configs/dataset/o5_regression.yaml -C configs/model/o5_deh_reg.yaml --trainer.max_steps=131072 --trainer.val_check_interval=1024 --dataset.batch_size=32 --dataset.num_samples=300 --optimizer.lr=0.001
+# python o5_regression.py -C configs/engineer/trainer.yaml -C configs/optimizer/adam.yaml -C configs/dataset/o5_regression.yaml -C configs/model/o5_deh_reg.yaml --trainer.max_steps=131072 --trainer.val_check_interval=1024 --dataset.batch_size=32 --dataset.num_samples=100 --optimizer.lr=0.001
+# python o5_regression.py -C configs/engineer/trainer.yaml -C configs/optimizer/adam.yaml -C configs/dataset/o5_regression.yaml -C configs/model/o5_deh_reg.yaml --trainer.max_steps=131072 --trainer.val_check_interval=1024 --dataset.batch_size=30 --dataset.num_samples=30 --optimizer.lr=0.001

@@ -1,0 +1,11 @@
+model:
+  module: models.deepspheres.DEH_skeletons
+  depth: 2
+  width: [3, 2]
+  space_dim: 3
+  hidden_features: 32
+  sphere_bias: True
+  normalized_spheres: False
+  permutation_invariant: True
+
+# python o3_skeletons.py -C configs/engineer/trainer.yaml -C configs/optimizer/adam.yaml -C configs/dataset/skeletons.yaml -C configs/model/o3_deh_skeletons.yaml --seed=1 --trainer.max_steps=72000 --trainer.val_check_interval=1000 --dataset.batch_size=32 --optimizer.lr=0.001

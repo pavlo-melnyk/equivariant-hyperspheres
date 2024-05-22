@@ -1,0 +1,3 @@
+dataset:
+  module: data.o5_regression.O5Dataset
+
