@@ -1,8 +1,8 @@
-# [$\textup{O}n$ Learning Deep $\textup{O}(n)$-Equivariant Hyperspheres](https://arxiv.org/abs/2305.15613)
+# [On Learning Deep O(n)-Equivariant Hyperspheres](https://arxiv.org/abs/2305.15613)
 
 <!-- Add assets/figure.png -->
 
-The official implementation of the ["$\textup{O}n$ Learning Deep $\textup{O}(n)$-Equivariant Hyperspheres"](https://arxiv.org/abs/2305.15613) paper, accepted to ICML 2024
+The official implementation of the ["On Learning Deep O(n)-Equivariant Hyperspheres"](https://arxiv.org/abs/2305.15613) paper, accepted to ICML 2024
 
 ![Figure 1](misc/figure1.png)
 
