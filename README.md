@@ -1,8 +1,8 @@
-# [On Learning Deep O(n)-Equivariant Hyperspheres](https://arxiv.org/abs/2305.15613)
+# [O*n* Learning Deep O(*n*)-Equivariant Hyperspheres](https://arxiv.org/abs/2305.15613)
 
 <!-- Add assets/figure.png -->
 
-The official implementation of the ["On Learning Deep O(n)-Equivariant Hyperspheres"](https://arxiv.org/abs/2305.15613) paper, accepted to ICML 2024
+The official implementation of the ["O*n* Learning Deep O(*n*)-Equivariant Hyperspheres"](https://arxiv.org/abs/2305.15613) paper, accepted to ICML 2024
 
 ![Figure 1](misc/figure1.png)
 
@@ -13,8 +13,7 @@ The official implementation of the ["On Learning Deep O(n)-Equivariant Hypersphe
 This repository borrows the organisation and experimental setup code from https://github.com/DavidRuhe/clifford-group-equivariant-neural-networks.
 
 ## Abstract
-In this paper, we utilize hyperspheres and regular $n$-simplexes and propose an approach to learning deep features equivariant under the transformations of $n$D reflections and rotations, encompassed by the powerful group of O($n$). 
-Namely, we propose O($n$)-equivariant neurons with spherical decision surfaces that generalize to any dimension n, which we call Deep Equivariant Hyperspheres. We demonstrate how to combine them in a network that directly operates on the basis of the input points and propose an invariant operator based on the relation between two points and a sphere, which as we show, turns out to be a Gram matrix. Using synthetic and real-world data in nD, we experimentally verify our theoretical contributions and find that our approach is superior to the competing methods for O(n)-equivariant benchmark datasets (classification and regression), demonstrating a favorable speed/performance trade-off.
+In this paper, we utilize hyperspheres and regular *n*-simplexes and propose an approach to learning deep features equivariant under the transformations of *n*D reflections and rotations, encompassed by the powerful group of O(*n*). Namely, we propose O(*n*)-equivariant neurons with spherical decision surfaces that generalize to any dimension n, which we call Deep Equivariant Hyperspheres. We demonstrate how to combine them in a network that directly operates on the basis of the input points and propose an invariant operator based on the relation between two points and a sphere, which as we show, turns out to be a Gram matrix. Using synthetic and real-world data in *n*D, we experimentally verify our theoretical contributions and find that our approach is superior to the competing methods for O(*n*)-equivariant benchmark datasets (classification and regression), demonstrating a favorable speed/performance trade-off.
 
 ## Requirements and installation 
 (the versions used for the experiments)
@@ -35,7 +34,7 @@ Have a look at `notebooks/equivariant_hyperspheres_demo.ipynb` for a gentle intr
 - `engineer/`: Contains the training and evaluation scripts.
 - `models/`: Contains model (`deepspheres.py`) and layer (`hyperspheres.py`) implementations.
 - `notebooks/`: Contains the theory demo notebook.
-- `log-<experiment_name>`: Contains checkpoints of the models from respective experiments.
+- `log-<experiment_name>/`: Contains checkpoints of the models from respective experiments.
 
 ## Usage and datasets
 Before running the experiments:
@@ -50,6 +49,7 @@ Before running the experiments:
 
 ### O(3) Action recognition (Skeletons)
 ```python o3_skeletons.py -C configs/engineer/trainer.yaml -C configs/optimizer/adam.yaml -C configs/dataset/skeletons.yaml -C configs/model/o3_deh_skeletons.yaml --seed=1 --trainer.max_steps=72000 --trainer.val_check_interval=1000 --dataset.batch_size=32 --optimizer.lr=0.001```
+
 (See `o3_skeletons.py` for more options.)
 
 
