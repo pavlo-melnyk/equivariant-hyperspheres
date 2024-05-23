@@ -2,7 +2,7 @@
 
 <!-- Add assets/figure.png -->
 
-The official implementation of the ["O*n* Learning Deep O(*n*)-Equivariant Hyperspheres"](https://arxiv.org/abs/2305.15613) paper, accepted to ICML 2024
+The official implementation of the ["O*n* Learning Deep O(*n*)-Equivariant Hyperspheres"](https://arxiv.org/abs/2305.15613) paper, accepted at ICML 2024
 
 ![Figure 1](misc/figure1.png)
 
