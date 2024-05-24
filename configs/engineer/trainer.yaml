@@ -2,7 +2,8 @@ trainer:
   module: engineer.Trainer
   # test_only: True         # uncomment this line along with one of the below checkpoints to only evaluate the model
 
-  # checkpoint: log-o5-reg/best_val_loss_30000        # saved in ../../log-o3-skeletons
+  # O(5) Regression
+  # checkpoint: log-o5-reg/best_val_loss_30000        # saved in ../../log-o5-reg
   # checkpoint: log-o5-reg/best_val_loss_10000
   # checkpoint: log-o5-reg/best_val_loss_3000
   # checkpoint: log-o5-reg/best_val_loss_1000
@@ -10,12 +11,14 @@ trainer:
   # checkpoint: log-o5-reg/best_val_loss_100
   # checkpoint: log-o5-reg/best_val_loss_30
 
-  # checkpoint: log-o5-hull/best_val_loss_65536       # saved in ../../log-o3-skeletons
+  # O(5) Convex hulls
+  # checkpoint: log-o5-hull/best_val_loss_65536       # saved in ../../log-o5-hull
   # checkpoint: log-o5-hull/best_val_loss_16384
   # checkpoint: log-o5-hull/best_val_loss_4096
   # checkpoint: log-o5-hull/best_val_loss_1024
   # checkpoint: log-o5-hull/best_val_loss_256
 
+  # O(3) Action recognition
   # checkpoint: log-o3-skeletons/best_val_acc_2295    # saved in ../../log-o3-skeletons
   # checkpoint: log-o3-skeletons/best_val_acc_710
   # checkpoint: log-o3-skeletons/best_val_acc_520
