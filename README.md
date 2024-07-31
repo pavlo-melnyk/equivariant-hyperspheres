@@ -1,8 +1,8 @@
-# [O*n* Learning Deep O(*n*)-Equivariant Hyperspheres](https://arxiv.org/abs/2305.15613)
+# [O*n* Learning Deep O(*n*)-Equivariant Hyperspheres](https://proceedings.mlr.press/v235/melnyk24a.html)
 
 <!-- Add assets/figure.png -->
 
-The official implementation of the ["O*n* Learning Deep O(*n*)-Equivariant Hyperspheres"](https://arxiv.org/abs/2305.15613) paper, accepted at ICML 2024
+The official implementation of the ["O*n* Learning Deep O(*n*)-Equivariant Hyperspheres"](https://proceedings.mlr.press/v235/melnyk24a.html) paper, ICML 2024
 
 ![Figure 1](misc/figure1.png)
 
@@ -65,10 +65,17 @@ Before running the experiments:
 ## Citation
 Please cite in case you find the code/paper useful:
 ```
-@article{melnyk2024onlearning,
-  title={{O$n$ Learning Deep O($n$)-Equivariant Hyperspheres}},
-  author={Melnyk, Pavlo and Felsberg, Michael and Wadenb{\"a}ck, M{\aa}rten and Robinson, Andreas and Le, Cuong},
-  journal={arXiv preprint arXiv:2305.15613},
-  year={2024}
+@InProceedings{pmlr-v235-melnyk24a,
+  title = 	 {O$n$ Learning Deep O($n$)-Equivariant Hyperspheres},
+  author =       {Melnyk, Pavlo and Felsberg, Michael and Wadenb\"{a}ck, M{\aa}rten and Robinson, Andreas and Le, Cuong},
+  booktitle = 	 {Proceedings of the 41st International Conference on Machine Learning},
+  pages = 	 {35324--35339},
+  year = 	 {2024},
+  volume = 	 {235},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {21--27 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://raw.githubusercontent.com/mlresearch/v235/main/assets/melnyk24a/melnyk24a.pdf},
+  url = 	 {https://proceedings.mlr.press/v235/melnyk24a.html},
 }
 ```
