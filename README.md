@@ -4,6 +4,8 @@
 
 The official implementation of the ["O*n* Learning Deep O(*n*)-Equivariant Hyperspheres"](https://proceedings.mlr.press/v235/melnyk24a.html) paper, ICML 2024
 
+(**UPD 2026-03-02**: This repository also contains [code](notebooks/en_equiv_spherical_decision_surfaces) for the follow‑up work on ["E(*n*)-Equivariant Spherical Decision Surfaces"](https://openreview.net/forum?id=Zx1Xvvflb5#discussion) (Pavlo Melnyk, Michael Felsberg, and Kostas Daniilidis), ICLR 2026 Workshop on Geometry-grounded Representation Learning and Generative Modeling.)
+
 ![Figure 1](misc/figure1.png)
 
 **Authors:** Pavlo Melnyk, Michael Felsberg, Mårten Wadenbäck, Andreas Robinson, Cuong Le
@@ -27,6 +29,7 @@ In this paper, we utilize hyperspheres and regular *n*-simplexes and propose an 
 
 ## Theory demo
 Have a look at `notebooks/equivariant_hyperspheres_demo.ipynb` for a gentle introduction to the core theory presented in our paper.
+
 
 ## Code organization
 - `configs/`: Contains the configuration files.
@@ -60,10 +63,15 @@ Before running the experiments:
 ### O(5) Convex hulls
 ```python hulls.py -C configs/engineer/trainer.yaml -C configs/optimizer/adam.yaml -C configs/dataset/hulls.yaml -C configs/model/o5_deh_hull.yaml --trainer.max_steps=131072 --trainer.val_check_interval=1024 --dataset.batch_size=128 --dataset.num_samples=65536 --optimizer.lr=0.001```
 
+## Follow-up work
+The associated notebooks can be found in
+- [`notebooks/en_equiv_spherical_decision_surfaces/`](notebooks/en_equiv_spherical_decision_surfaces) (dependency versions for the experiments are specified in the notebooks)
+
 
 
 ## Citation
 Please cite in case you find the code/paper useful:
+### Original work
 ```
 @InProceedings{pmlr-v235-melnyk24a,
   title = 	 {O$n$ Learning Deep O($n$)-Equivariant Hyperspheres},
@@ -77,5 +85,15 @@ Please cite in case you find the code/paper useful:
   publisher =    {PMLR},
   pdf = 	 {https://raw.githubusercontent.com/mlresearch/v235/main/assets/melnyk24a/melnyk24a.pdf},
   url = 	 {https://proceedings.mlr.press/v235/melnyk24a.html},
+}
+```
+### Follow-up work
+```
+@inproceedings{melnyk2026enequivariant,
+  title={E\$(n)\$-Equivariant Spherical Decision Surfaces},
+  author={Pavlo Melnyk and Michael Felsberg and Kostas Daniilidis},
+  booktitle={ICLR 2026 Workshop on Geometry-grounded Representation Learning and Generative Modeling},
+  year={2026},
+  url={https://openreview.net/forum?id=Zx1Xvvflb5}
 }
 ```
